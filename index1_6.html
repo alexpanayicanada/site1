@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+    background-image: url("pics/background.jpg");
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	font-family: Arial;
+	font-size: 13px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+	<li><img src="pics/at.gif" alt="Trader" width="6%" height="6%"></li>
+  <li><a href="#home">Home</a></li>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Azure</a>
+    <div class="dropdown-content">
+      <a href="http://manage.windowsazure.com/" target="_blank">Azure Portal</a>
+      <a href="http://azure.microsoft.com/en-us/status/#current" target="_blank">Azure Health</a>
+	  <a href="https://resources.azure.com" target="_blank">Azure Resource</a>
+	  <a href="https://my.edgecast.com/Account/Login?ReturnUrl=%2fexternal%2ftwofactorauthentication.aspx" target="_blank">EdgeCast</a>
+	  <a href="https://tradersso.accesscontrol.windows.net/" target="_blank">SSO-ACS</a>
+   </div>
+  </li>
+
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">DNS</a>
+    <div class="dropdown-content">
+	  <a href="http://console.aws.amazon.com/" target="_blank">Route53</a>
+      <a href="http://status.aws.amazon.com/" target="_blank">Route53 Health</a>
+      <a href="https://www.webnames.ca/Default.aspx" target="_blank">WebNames</a>
+    </div>
+  </li>
+  
+      <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">SSL</a>
+    <div class="dropdown-content">
+      <a href="https://hard.cert-manager.com/customer/trader" target="_blank">Comodo</a>
+      <a href="https://www.ssllabs.com/ssltest/" target="_blank">SSL Labs</a>
+     </div>
+  </li>
+  
+  
+      <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Load Balancers</a>
+    <div class="dropdown-content">
+      <a href="https://www.incapsula.com/" target="_blank">Incapsula</a>
+      <a href="https://status.incapsula.com/" target="_blank">Incapsula Health</a>
+      <a href="https://tdrkemp.cloudapp.net:8443" target="_blank">Kemp Master</a>
+	  <a href="https://tdrkemp.cloudapp.net:8442" target="_blank">Kemp Slave</a>
+	  <a href="https://10.10.102.210" target="_blank">Kemp Vision 360</a>
+    </div>
+  </li>
+  
+      <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Monitoring</a>
+    <div class="dropdown-content">
+      <a href="https://newrelic.com" target="_blank">New Relic</a>
+	  <a href="http://traderphotohelper.cloudapp.net/reporting/HealthCheck.aspx" target="_blank">PhotoHelper Status</a>
+      <a href="http://beta2.autotrader.ca/reports/yggdrasil.aspx" target="_blank">Data Processor Status</a>
+      <a href="http://192.168.223.23/yggdrasil.aspx" target="_blank">Yggdrasil Admin</a>
+	  <a href="https://eview.endtoend.com/" target="_blank">eVIEW E2E</a>
+    </div>
+  </li>
+  
+  
+        <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Mail</a>
+    <div class="dropdown-content">
+      <a href="https://app.sparkpost.com/auth" target="_blank">SparkPost</a>
+      <a href="https://cc.ceryx.com/" target="_blank">Ceryx</a>
+      <a href="#">OWA</a>
+    </div>
+  </li>
+  
+
+           <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Administration</a>
+    <div class="dropdown-content">
+      <a href="http://www.ip-tracker.org/locator/ip-lookup.php" target="_blank">IP Lookup</a>
+      <a href="http://network-tools.com/" target="_blank">Network Tools</a>
+      <a href="https://technet.microsoft.com/en-us/security/bulletin/dn602597.aspx" target="_blank">MS Security Bulletin</a>
+	   <a href="https://www.diffchecker.com/diff" target="_blank">Diff Checker</a>
+	   <a href="\\wmsevfspr1.se.trader.corp\Infrastructure\Passwords" target="_blank">Keepass</a>
+    </div>
+  </li>
+  
+         <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">HR</a>
+    <div class="dropdown-content">
+      <a href="http://tradertracker.trader.corp/" target="_blank">TimeSheet</a>
+      <a href="http://www.paystub.trader.ca/" target="_blank">Pay Stub</a>
+      <a href="https://www.concursolutions.com" target="_blank">Expenses</a>
+	  <a href="https://trader-ws.silkroad.com/Trader/login.aspx" target="_blank">Performance</a>
+      <a href="http://www.desjardinslifeinsurance.com/en/Pages/home.aspx" target="_blank">Benifits</a>
+      <a href="https://ezlm.adp.com/" target="_blank">Vacation</a>
+	  <a href="https://trader-greenlight.silkroad.com/" target="_blank">Training</a>
+    </div>
+  </li> 
+  
+           <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Deployment</a>
+    <div class="dropdown-content">
+      <a href="http://citdrteamcity.cloudapp.net:81/" target="_blank">TeamCity</a>
+      <a href="https://octopus.ci.autotrader.ca" target="_blank">Octopus Deploy</a>
+      <a href="#">TeamCity2</a>
+    </div>
+  </li> 
+  
+  
+           <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Ticketing</a>
+    <div class="dropdown-content">
+      <a href="https://trader.atlassian.net/" target="_blank">Jira</a>
+      <a href="https://bitbucket.org/tradercorporation" target="_blank">BitBucket</a>
+      
+    </div>
+  </li> 
+  
+  
+</ul>
+
+<!-- <font face="verdana" color="cc3300"><h2> DevOps Portal </h2> <br> <br> </font> -->
+<br> 
+
+
+<table border="0" width="300">
+
+<tr bgcolor="white">
+<td width="50%" align="left"><B><H5><font color="blue"> SUPPORT CONTACTS </font></H5></B></td>
+
+</tr>
+
+
+<tr bgcolor="white">
+<td width="30%" align="left"><font size="2">Kemp</font></td>
+<td width="30%" align="left"><font size="2">+1-844-556-4398</font></td>
+</tr>
+<tr bgcolor="white">
+<td width="30%" align="left"><font size="2">Comodo</font></td>
+<td width="30%" align="left"><font size="2">+1-703-581-6361 ,,5</font></td>
+</tr>
+<tr bgcolor="white">
+<td width="30%" align="left"><font size="2">E2E</font></td>
+<td width="30%" align="left"><font size="2">+1-905-415-8300</font></td>
+</tr>
+
+</table>
+
+
+<table border="0" width="300">
+
+<tr bgcolor="white">
+<td width="50%" align="left"><B><H5><font color="blue"> SUPPORT CONTACTS </font></H5></B></td>
+
+</tr>
+
+
+<tr bgcolor="white">
+<td width="30%" align="left"><font size="2">Kemp</font></td>
+<td width="30%" align="left"><font size="2">+1-844-556-4398</font></td>
+</tr>
+<tr bgcolor="white">
+<td width="30%" align="left"><font size="2">Comodo</font></td>
+<td width="30%" align="left"><font size="2">+1-703-581-6361 ,,5</font></td>
+</tr>
+<tr bgcolor="white">
+<td width="30%" align="left"><font size="2">E2E</font></td>
+<td width="30%" align="left"><font size="2">+1-905-415-8300</font></td>
+</tr>
+
+</table>
+
+<center><img src="pics/cloud2.png" alt="cloud" width="40%" height="40%"> </center>
+
+
+
+
+
+</body>
+</html>
